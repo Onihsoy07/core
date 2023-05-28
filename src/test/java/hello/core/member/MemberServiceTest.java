@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceTest {
 
-    MemberService memberService = new MemberServiceImpl();
+    private final MemberService memberService = new MemberServiceImpl();
 
     @Test
     void join() {
