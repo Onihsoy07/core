@@ -55,7 +55,7 @@ public class SingletonWithPrototypeTest1 {
         public SingletonBean(Provider<PrototypeBean> prototypeBeanProvider) {
             this.prototypeBeanProvider = prototypeBeanProvider;
         }
-        
+
         public int logic() {
             PrototypeBean prototypeBean = prototypeBeanProvider.get();
             prototypeBean.addCount();
