@@ -18,7 +18,6 @@ public class BeanLifeCycle {
         NetworkClient networkClient = ac.getBean(NetworkClient.class);
         //ApplicationContext에는 close없음 ConfigurableApplicationContext or AnnotationConfigApplicationContext로 가능
         //AnnotationConfigApplicationContext가 ConfigurableApplicationContext 상속
-        networkClient.connect();
         ac.close();
     }
 
